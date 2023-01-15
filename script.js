@@ -1,11 +1,19 @@
-function encriptar() {
-    alert('encriptar');
-    var ancla = document.getElementsByClassName('nav-enlace');
-    for (var i = 0; i < ancla.length; i++) {
-        ancla[i].classList.toggle('desaparece');
-    }
+
+
+
+function buttonEncriptar() {
+    var textboxEncrypt = document.getElementById("textboxEncrypt").value.toLowerCase();
+    //alert(textboxEncrypt);
+
+    var textEncrypted = textboxEncrypt.replace(/e/img, "enter");
+    var textEncrypted = textEncrypted.replace(/i/img, "imes");
+    var textEncrypted = textEncrypted.replace(/a/img, "ai");
+    var textEncrypted = textEncrypted.replace(/o/img, "ober");
+    var textEncrypted = textEncrypted.replace(/u/img, "ufat");
+
+    document.getElementById("textboxDecrypt").innerHTML = textEncrypted;
 }
 
-function desencriptar(){
+function buttonDesencriptar(){
     alert('desencriptar');
 }

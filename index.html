@@ -16,51 +16,56 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body data-aos="fade-down" data-aos-duration="2000">
+<body data-aos="fade-down" data-aos-duration="2000" style="background-color: rgb(255, 155, 155);">
 
-    <header class="frameLogo">
+    <header class="frameLogo" style="background-color: aquamarine;">
         <img id="logo" src="img/Vector.png" alt="Logo Alura" />
     </header>
 
-    <main>
+    <main style="background-color: bisque;">
 
-        <div class="letras">
-            <img src="img/warning.png">
-            <span>Solo letras minúsculas y sin acentos.</span>
-        </div>
 
-        <div class="frameMuneco">
+        <div class="section1" style="background-color: blueviolet;">
 
-            <textarea placeholder=" " class="textboxDecrypt" id="textboxDecrypt"></textarea>
-
-            <img id="muneco" src="img/Muñeco.png" alt="Muñeco" />
-            <div id="letras">
-                <div id="textoMuneco1">
-                    <span>Ningún mensaje fue encontrado.</span>
-                </div>
-                <div id="textoMuneco2">
-                    <span>Ingresa el texto que desees encriptar o desencriptar.</span>
-                </div>
+            <textarea class="textboxEncrypt" id="textboxEncrypt" placeholder="Ingrese aqui el texto."></textarea>
+            <div class="letras">
+                <img src="img/warning.png">
+                <span>Solo letras minúsculas y sin acentos.</span>
             </div>
-            <button type="button" class="buttonCopiar" id="buttonCopiar" onclick="buttonCopiar()">Copiar</button>
+            <div class="frameBotones">
+                <button type="button" class="buttonEncriptar" id="buttonEncriptar"
+                    onclick="buttonEncriptar()">Encriptar</button>
+                <button type="button" class="buttonDesencriptar" id="buttonDesencriptar"
+                    onclick="buttonDesencriptar()">Desencriptar</button>
+            </div>
+
         </div>
 
-        <!-- <input class="textboxEncrypt" id="textboxEncrypt" value="Ingrese el texto aquí."> -->
-        <textarea class="textboxEncrypt" id="textboxEncrypt" placeholder="Ingrese aqui el texto."></textarea>
+        <div class="section2" style="background-color: green;">
+            <div class="frameMuneco">
+                <textarea placeholder=" " class="textboxDecrypt" id="textboxDecrypt"></textarea>
 
+                <img id="muneco" src="img/Muñeco.png" alt="Muñeco" />
 
-        <div class="frameBotones">
-            <button type="button" class="buttonEncriptar" id="buttonEncriptar"
-                onclick="buttonEncriptar()">Encriptar</button>
-            <button type="button" class="buttonDesencriptar" id="buttonDesencriptar"
-                onclick="buttonDesencriptar()">Desencriptar</button>
+                <div id="letras">
+                    <div id="textoMuneco1">
+                        <span>Ningún mensaje fue encontrado.</span>
+                    </div>
+                    <div id="textoMuneco2">
+                        <span>Ingresa el texto que desees encriptar o desencriptar.</span>
+                    </div>
+                </div>
+                <button type="button" class="buttonCopiar" id="buttonCopiar" onclick="buttonCopiar()">Copiar</button>
+            </div>
         </div>
+
+
+
 
     </main>
 
-    <footer>
-        <span>Maked by Andy Vela</span>
-        <span>AluraChallenge_Grupo @ 2023</span>
+    <footer style="background-color: yellow;">
+        <span>Andy Vela @ AluraChallenge - 2023</span>
     </footer>
 
     <script src="js/app.js"></script>
@@ -74,7 +79,5 @@
     </script>
     <script type="text/JavaScript" src="script.js"></script>
 </body>
-
-
 
 </html>

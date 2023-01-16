@@ -70,6 +70,15 @@ body {
     .header logo {
         text-align: center;
     }
+
+    main{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    
+    section{
+        lex-basis: 33%;
+    }
 }
 
 .buttonEncriptar {
@@ -155,7 +164,6 @@ body {
 }
 
 main{
-    
     margin: 20px auto;
     width: 90%;
     overflow: hidden;
@@ -163,9 +171,10 @@ main{
     padding: 20px 20px;
     border-radius: 20px;
     box-shadow: rgb(0 0 0) 1px 2px 9px 1px;
-    
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 100%
 }
 
 main_section{
@@ -175,29 +184,10 @@ main_section{
 }
 
 .section1{
-    width: 45%;
+    width: 48%;
 }
 
 .textboxEncrypt{
-    line-height: 150%;
-    color: #62710a;
-    background-color: #F3F5FC;
-    font-weight: 400;
-    font-size: 1em;
-    width: 80%;
-    height: 70%;
-    resize: none;
-    border: none;
-    outline: none;
-    display: block;
-    margin: 10% auto;
-}
-
-.section2{
-    width: 45%;
-}
-
-.textboxDecrypt{
     line-height: 150%;
     color: #62710a;
     background-color: #F3F5FC;
@@ -216,36 +206,78 @@ main_section{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 18px;
-}
-
-.letras_muneco{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 0.8em;
+    font-size: 1em;
+    line-height: 120%;
+    
+    color: #343A40;
+    align-self: stretch;
+    margin: 10%;
+    margin-inline: auto;
+    text-align: center;
+    /* visibility: hidden; */
+}
+
+.section2{
+    width: 48%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    display: grid;
+    align-content: center;
+    
+}
+
+.textboxDecrypt{
+    background-color: #F3F5FC;
+    font-weight: 400;
+    font-size: 1em;
+    width: 80%;
+    height: 50%;
+    resize: none;
+    border: none;
+    outline: none;
+    display: none;
+    margin: 10% auto;
+    
+}
+
+#textoMuneco1{
+
+    font-weight: 700;
+    font-size: 1em;
     line-height: 120%;
     text-align: center;
     color: #343A40;
     align-self: stretch;
-    margin: 20px;
+    margin-top: 5%;
     margin-inline: auto;
+    /* visibility: hidden; */
+}
+
+#textoMuneco2{
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    align-self: stretch;
+    margin: 5%;
+    margin-inline: auto;
+    /* visibility: hidden; */
 }
 
 #muneco {
     position: relative;
-    object-fit: cover;
+    width: auto;
     margin: auto;
-    
+    /* visibility: hidden; */
     display: flex;
+    height: auto;
+    object-fit: contain;
 }
 
-.frameMuneco {
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-    display: grid;
-    align-content: center;
-}
 
 footer{
     width: 100%;

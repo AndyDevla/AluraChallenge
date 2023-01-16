@@ -18,7 +18,7 @@
 
 <body>
     <!-- data-aos="fade-down" data-aos-duration="2000" -->
-    <header class="header"> 
+    <header class="header">
         <img id="logo" src="img/Vector.png" alt="Logo Alura" style="float: left; margin: 3px;" />
         <a class="logo">Alura Challange</a>
         <div class="header-right">
@@ -34,34 +34,32 @@
     </header>
 
     <main>
-            <section class="section1" style="background-color: green;">
-                <textarea class="textboxEncrypt" id="textboxEncrypt" placeholder="Ingrese aqui el texto."></textarea>
-                <div id="letras">
-                    <img src="img/warning.png">
-                    <span>Solo letras minúsculas y sin acentos.</span>
+        <section class="section1" style="background-color: red;">
+            <textarea class="textboxEncrypt" id="textboxEncrypt" placeholder="Ingrese aqui el texto."></textarea>
+            <div id="letras">
+                <img src="img/warning.png">
+                <span>Solo letras minúsculas y sin acentos.</span>
+            </div>
+
+        </section>
+
+        <section class="section2" style="background-color: green;">
+            <textarea placeholder=" " class="textboxDecrypt" id="textboxDecrypt"></textarea>
+
+            <img id="muneco" src="img/Muñeco.png" alt="Muñeco" />
+
+            <div class="letras_muneco">
+                <div id="textoMuneco1">
+                    <span>Ningún mensaje fue encontrado.</span>
                 </div>
-    
-            </section>
-    
-            <section class="section2"  style="background-color: red;">
-                <div class="frameMuneco">
-    
-                    <textarea placeholder=" " class="textboxDecrypt" id="textboxDecrypt"></textarea>
-    
-                    <img id="muneco" src="img/Muñeco.png" alt="Muñeco" />
-    
-                    <div class="letras_muneco">
-                        <div id="textoMuneco1">
-                            <span>Ningún mensaje fue encontrado.</span>
-                        </div>
-                        <div id="textoMuneco2">
-                            <span>Ingresa el texto que desees encriptar o desencriptar.</span>
-                        </div>
-                    </div>
-                    <button type="button" class="buttonCopiar" id="buttonCopiar" onclick="buttonCopiar()">Copiar</button>
+                <div id="textoMuneco2">
+                    <span>Ingresa el texto que desees encriptar o desencriptar.</span>
                 </div>
-            </section>
-        
+            </div>
+            <button type="button" class="buttonCopiar" id="buttonCopiar" onclick="buttonCopiar()">Copiar</button>
+
+        </section>
+
 
 
     </main>

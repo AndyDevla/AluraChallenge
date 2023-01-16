@@ -11,8 +11,8 @@ function buttonEncriptar() {
         var textEncrypted = textEncrypted.replace(/u/img, "ufat");
     
         document.getElementById("textboxDecrypt").innerHTML = textEncrypted;
-        document.getElementById("muneco").style.display = 'none';
-        document.getElementById("letras").style.display = 'none';
+        document.getElementById("muneco").style.visibility = 'hidden';
+        document.getElementById("letras").style.visibility = 'hidden';
         document.getElementById("textboxDecrypt").style.display = 'flex';
         document.getElementById("buttonCopiar").style.display = 'inline-table';
     }

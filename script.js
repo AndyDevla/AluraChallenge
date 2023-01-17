@@ -12,7 +12,8 @@ function buttonEncriptar() {
     
         document.getElementById("textboxDecrypt").innerHTML = textEncrypted;
         document.getElementById("muneco").style.visibility = 'hidden';
-        document.getElementById("letras").style.visibility = 'hidden';
+        document.getElementById("textoMuneco1").style.display = 'none';
+        document.getElementById("textoMuneco2").style.display = 'none';
         document.getElementById("textboxDecrypt").style.display = 'flex';
         document.getElementById("buttonCopiar").style.display = 'inline-table';
     }
